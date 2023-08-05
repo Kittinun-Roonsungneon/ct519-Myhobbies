@@ -11,6 +11,8 @@ services:
       - ./myweb:/var/www/html/
     ports:
       - 8081:80
+    networks:
+      - internal
   db:
     image: mariadb
     container_name: my_mariadb
@@ -26,6 +28,10 @@ services:
     volumes:
       - mariadb_data:/var/lib/mysql
       - ./mysql:/docker-entrypoint-initdb.d
-
+    networks:
+      - internal
 volumes:
-  mariadb_data:  
+  mariadb_data: 
+networks:
+    internal:
+      driver: bridge 
