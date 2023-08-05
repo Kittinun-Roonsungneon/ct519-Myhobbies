@@ -23,3 +23,6 @@ services:
       MYSQL_PASSWORD: 65130695
     ports:
       - 6033:3306
+    volumes:
+      - ./mysql:/var/lib/mysql/data
+      - ./mysql/myhobbies.sql:/docker-entrypoint-initdb.d/myhobbies.sql  
