@@ -63,29 +63,33 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit']))  {
         </div>
         
         <div class="container mt-5">
-            <div class="row justify-content-center">
-                <div class="col-sm-6">
-                    <div class="card">
-                        <div class="card-body">
-                            <form action="add_hobbies.php" method="post" enctype="multipart/form-data">
-                            <div class="form-group text-center">
-                                <label for="name" class="form-label">Name:</label>
-                                <input type="text" class="form-control" id="name" placeholder="ชื่อสินค้า" name="name">
-                                <label for="description" class="form-label">Description:</label>
-                                <input type="text" class="form-control" id="description" placeholder="รายละเอียดสินค้า" name="description">
-                                <label for="myfile">Select a file:</label>
-                                <input type="file" class="form-control" id="image" name="image" accept=".jpg, .jpeg, .png">
-                            </div>
-
-                            <div class="text-center"> <!-- Center the button within this div -->
-                                <button type="submit" class="btn btn-primary" id="submit" name="submit">Submit</button>
-                            </div>
-                            </form>
+    <div class="row justify-content-center">
+        <div class="col-sm-6">
+            <div class="card">
+                <div class="card-body">
+                    <form action="add_hobbies.php" method="post" enctype="multipart/form-data">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Name:</label>
+                            <input type="text" class="form-control" id="name" placeholder="ชื่องานอดิเรก" name="name">
                         </div>
-                    </div>
+                        <div class="form-group">
+                            <label for="description" class="form-label">Description:</label>
+                            <input type="text" class="form-control" id="description" placeholder="รายละเอียดงานอดิเรก" name="description">
+                        </div>
+                        <div class="form-group">
+                            <label for="image" class="form-label">Select an image:</label>
+                            <input type="file" class="form-control" id="image" name="image" accept=".jpg, .jpeg, .png">
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary" id="submit" name="submit">Submit</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
+    </div>
+</div>
+
         <br>
     </div> <!-- container-fluid, tm-container-content -->
     
