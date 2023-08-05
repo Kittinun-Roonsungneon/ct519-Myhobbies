@@ -2,8 +2,8 @@
         <div class="container-fluid tm-container-small">
             <div class="row">
                 <div class="col-lg-6 col-md-12 col-12 px-5 mb-5">
-                    <h3 class="tm-text-primary mb-4 tm-footer-title">About AEK Ocha</h3>
-                    <p>AEK Ocha <a rel="sponsored" href="https://v5.getbootstrap.com/">Use Html5 + Bootstrap 5 + Css3 + Javascripts to Frontend and Use Php + MariaDB to Backend</a> </p>
+                    <h3 class="tm-text-primary mb-4 tm-footer-title">About Kittinun Roonsungneon</h3>
+                    <p>Kittinun Roonsungneon <a rel="sponsored" href="https://v5.getbootstrap.com/">Use Html5 + Bootstrap 5 + Css3 + Javascripts to Frontend and Use Php + MariaDB to Backend</a> </p>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6 col-12 px-5 mb-5">
                     <h3 class="tm-text-primary mb-4 tm-footer-title">Our Links</h3>
@@ -27,10 +27,10 @@
             </div>
             <div class="row">
                 <div class="col-lg-8 col-md-7 col-12 px-5 mb-3">
-                    Copyright 2023 Aek O-cha Company. All rights reserved.
+                    Copyright 2023
                 </div>
                 <div class="col-lg-4 col-md-5 col-12 px-5 text-right">
-                    Designed by <a href="https://templatemo.com" class="tm-text-gray" rel="sponsored" target="_parent">BasZy-</a>
+                    Designed by BasZy-</a>
                 </div>
             </div>
         </div>
