@@ -2,12 +2,12 @@ version: '3'
 services:
   web:
     build:
-      context: ./web
+      context: ./myweb
       dockerfile: Dockerfile
     ports:
       - "80:80"
     volumes:
-      - ./web:/var/www/html
+      - ./myweb:/var/www/html
 
   db:
     image: mysql:8.0
