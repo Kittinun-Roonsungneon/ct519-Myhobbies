@@ -17,7 +17,7 @@ services:
       MYSQL_USER: kittinun
       MYSQL_PASSWORD: 65130695
     volumes:
-      - ./sql/myhobbies.sql:/docker-entrypoint-initdb.d
+      - ./mysql/myhobbies.sql:/docker-entrypoint-initdb.d
 
 volumes:
   db_data:
