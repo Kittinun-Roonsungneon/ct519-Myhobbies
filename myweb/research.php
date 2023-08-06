@@ -27,71 +27,20 @@
         <div class="col-lg-7 col-md-6 col-12">
             <div class="tm-about-img-text">
                 <p class="mb-4">
-                    กราบสวัสดีทุกท่าน ผมชื่อนายกิตตินันท์ หรุ่นสูงเนิน ชื่อเล่นชื่อบาส</p>
+                    <h2>การเปรียบเทียบประสิทธิภาพ Could แต่ละตัว</h2>
+                </p>
+                <p>ในปัจจุบัน Cloud (คลาวด์) เป็นระบบคอมพิวเตอร์ที่เกิดขึ้นเพื่อรองรับการทำงานของผู้ใช้งานในทุกๆด้าน ทั้งด้านระบบเครือข่าย ด้านการจัดเก็บข้อมูล ด้านการติดตั้งฐานข้อมูล หรือการใช้งานซอฟต์แวร์เฉพาะด้านในธุรกิจต่างๆ เป็นต้น โดยที่ผู้ใช้บริการไม่จำเป็นต้องติดตั้งระบบทั้งฮาร์ดแวร์และซอฟต์แวร์ไว้ที่สำนักงานของตนให้มันยุ่งยาก แต่ผู้ใช้บริการสามารถใช้งานง่ายๆ ด้วยการเชื่อมต่อกับระบบ Cloud ผ่านอินเทอร์เน็ตได้เลย
+        ปัจจุบันถ้าหากพูดถึงผู้ให้บริการแพลตฟอร์ม Cloud หลักๆจะมีอยู่สามแห่งที่ครองส่วนแบ่งการตลาดส่วนใหญ่ คงหนีไม่พ้น Amazon Web Services (AWS), Microsoft Azure และ Google Cloud Platform (GCP) </p>
                 <p>
-                <p> ขณะนี้กำลังศึกษาอยู่ คณะวิศวกรรมคอมพิวเตอร์ มหาวิทยาลัยธุรกิจบัณฑิตย์ </p>
-                <p>รหัสนักศึกษา 65130695</p>
+                    โดยใช้วิธีการทำ linux ubuntu รับ load และทดสอบประสิทธิภาพ <br>
+                    โดยมี linux database private <br>
+                    โดยมี linux backend public <br>
+                    โดยมี linux web public <br>
+                </p>
             </div>                
         </div>
     </div>
-    <div class="row tm-mb-50">
-        <div class="col-md-6 col-12">
-            <div class="tm-about-2-col">
-                <h2 class="tm-text-primary mb-4">
-                    My GirlFriend
-                </h2>
-                <p class="mb-4">
-                คิม เซ-จ็อง (เกาหลี: 김세정; อาร์อาร์: Kim Se-jeong; เกิด 28 สิงหาคม ค.ศ. 1996) รู้จักกันในนาม เซจ็อง เป็นนักแสดงและนักร้องหญิงชาวเกาหลีใต้ เธอได้อันดับที่ 2 จากรายการแข่งขันเรียลลิตีเกิร์ลกรุปของเอ็มเน็ต "พรอดิวซ์ 101" ทำให้เธอได้เป็นสมาชิกของเกิร์ลกรุปโพรเจก ไอโอไอ เซ-จ็องยังเป็นสมาชิกของ คูกูดัน เกิร์ลกรุปภายใต้สังกัดเจลลีฟิชเอนเตอร์เทนเมนต์ ปัจจุบัน เธอทำงานในฐานะนักร้องเดี่ยวและนักแสดงที่เป็นที่รู้จักจากบทนำในละครชุดทางโทรทัศน์ นักเรียนอลวน มัธยมอลเวง (ค.ศ. 2017) เคาน์เตอร์ คนล่าปีศาจ (ค.ศ. 2020–2021) และ นัดบอดวุ่น ลุ้นรักท่านประธาน (ค.ศ. 2022)
-                </p>
-                
-            </div>                
-        </div> 
-        <div class="col-md-6 col-12">
-            <div class="tm-about-2-col">
-                <h2 class="tm-text-primary mb-4">
-                    Picture
-                </h2>
-                <p class="mb-4">
-                    <img src="img/A-Business-Proposal-star-Kim-Sejeong-tests-positive-for-COVID-19-currently-in-self-quarantine-after-wrapping-up-the-series-1.jpg" alt="Image" class="img-fluid">
-                </p>
-                
-            </div>                
-        </div>     
-    </div>
-    <!-- <div class="row tm-mb-50">
-        <div class="col-md-4 col-12">
-            <div class="tm-about-3-col">
-                <div class="tm-about-icon-container mb-5">
-                    <i class="fas fa-desktop fa-3x tm-text-primary"></i>
-                </div>                
-                <h2 class="tm-text-primary mb-4">Three-column title one</h2>
-                <p class="mb-4">Integer tristique arcu scelerisque mauris posuere convallis. Fusce egestas ipsum sapien, hendrerit ultricies nisi viverra eget. Vestibulum in tortor eget elit rutrum interdum. </p>
-                <p>Cras auctor velit urna, et feugiat ex tincidunt ut. Sed viverra, elit at pulvinar tristique, sem quam vehicula dolor, sed scelerisque augue mauris non dolor.</p>
-            </div>                
-        </div>
-        <div class="col-md-4 col-12">
-            <div class="tm-about-3-col">
-                <div class="tm-about-icon-container mb-5">
-                    <i class="fas fa-mobile-alt fa-3x tm-text-primary"></i>
-                </div>                
-                <h2 class="tm-text-primary mb-4">Title two of three-column</h2>
-                <p class="tm-mb-50">Donec nec est tincidunt, rhoncus nulla sit amet, imperdiet augue. Phasellus sodales placerat ipsum ac auctor. Mauris molestie blandit turpis. Mauris ante tellus, feugiat nec metus non, bibendum semper velit.</p>                
-                <div class="text-center">
-                    <a href="#" class="btn btn-primary">Read More</a>
-                </div>
-            </div>                
-        </div>
-        <div class="col-md-4 col-12">
-            <div class="tm-about-3-col">
-                <div class="tm-about-icon-container mb-5">
-                    <i class="fas fa-photo-video fa-3x tm-text-primary"></i>
-                </div>                
-                <h2 class="tm-text-primary mb-4">Third Title goes here</h2>
-                <p class="mb-4">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec nec est tincidunt, rhoncus nulla sit amet, imperdiet augue. </p>
-                <p>Phasellus sodales placerat ipsum ac auctor. Mauris molestie blandit turpis. Mauris ante tellus, feugiat nec metus non, bibendum semper velit.</p>
-            </div>                
-        </div>
-    </div> -->
+    
 </div> <!-- container-fluid, tm-container-content -->
 
     <?php 

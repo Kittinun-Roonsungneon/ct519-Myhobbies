@@ -29,10 +29,6 @@ CREATE TABLE `list`  (
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 6 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
-
-ALTER USER 'kittinun'@'%' IDENTIFIED WITH 'mysql_native_password' BY '65130695';
-GRANT ALL PRIVILEGES ON *.* TO 'kittinun'@'%' WITH GRANT OPTION;
-FLUSH PRIVILEGES;
 -- ----------------------------
 -- Records of list
 -- ----------------------------
