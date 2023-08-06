@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>about</title>
+    <title>Research</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="fontawesome/css/all.min.css">
     <link rel="stylesheet" href="css/templatemo-style.css">
@@ -17,12 +17,12 @@
 <div class="container-fluid tm-mt-60">
     <div class="row mb-4">
         <h2 class="col-12 tm-text-primary">
-            About Kittinun Roonsungneon
+            My Research
         </h2>
     </div>
     <div class="row tm-mb-74 tm-row-1640">            
         <div class="col-lg-5 col-md-6 col-12 mb-3">
-            <img src="img/bas.jpg" alt="Image" class="img-fluid">
+            <img src="img/maxresdefault.jpg" alt="Image" class="img-fluid">
         </div>
         <div class="col-lg-7 col-md-6 col-12">
             <div class="tm-about-img-text">

@@ -21,8 +21,8 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: myhobbies
-      # MYSQL_USER: kittinun
-      # MYSQL_PASSWORD: 65130695
+      MYSQL_USER: kittinun
+      MYSQL_PASSWORD: 65130695
     ports:
       - 3306:3306
     volumes:
@@ -30,6 +30,15 @@ services:
       - ./mysql:/docker-entrypoint-initdb.d
     networks:
       - internal
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    ports:
+      - "8000:81"
+    restart: always
+    environment:
+      PMA_HOST: db
+    depends_on:
+      - db
 networks:
     internal:
       driver: bridge 
