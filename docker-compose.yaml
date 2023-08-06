@@ -10,7 +10,7 @@ services:
     volumes:
       - ./myweb:/var/www/html/
     ports:
-      - 8081:80
+      - 80:80
     networks:
       - internal
   db:
@@ -21,8 +21,8 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: myhobbies
-      MYSQL_USER: kittinun
-      MYSQL_PASSWORD: 65130695
+      # MYSQL_USER: kittinun
+      # MYSQL_PASSWORD: 65130695
     ports:
       - 3306:3306
     volumes:
@@ -30,8 +30,10 @@ services:
       - ./mysql:/docker-entrypoint-initdb.d
     networks:
       - internal
-volumes:
-  mariadb_data: 
 networks:
     internal:
       driver: bridge 
+
+volumes:
+  mariadb_data:
+        
