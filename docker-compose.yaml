@@ -4,6 +4,7 @@ services:
     build:
       context: ./myweb
       dockerfile: Dockerfile
+    container_name: myweb
     ports:
       - "80:80"
     volumes:
@@ -11,6 +12,7 @@ services:
 
   db:
     image: mysql:8.0
+    container_name: mysql
     environment:
       MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: myhobbies
@@ -18,7 +20,8 @@ services:
       MYSQL_PASSWORD: 65130695
     volumes:
       - ./mysql/myhobbies.sql:/docker-entrypoint-initdb.d
-
+    ports:
+      - "3306:3306"
 volumes:
   db_data:
 
