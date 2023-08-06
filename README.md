@@ -1,5 +1,6 @@
 # ct519-Myhobbies
  สอบปลายภาค Cloud Computing
+# http://18.140.117.42/ pathweb
 # CT519
 
 ### หลักการออกแบบ 
