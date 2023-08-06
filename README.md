@@ -21,20 +21,20 @@ column id / ชื่อ / คำอธิบาย / รูป
 โดยแต่ละแบบจะมีการเก็บ data type ต่างกันไป เช่น ชื่อกับคำอธิบายจะเก็บเป็น STRING รูปจะ บันทึก path และ อัพโหลดรูปขึ้น db
 
 ### การอธิบายส่วนของ code ที่สำคัญ  
-จะเป็นด้านการทำระบบหลังบ้าน
-โดยเว็บจะมี 4 หน้า แยกองค์ประกอบเป็น
-connection.php 
-navbar.php
-footer.php
+จะเป็นด้านการทำระบบหลังบ้าน <br />
+โดยเว็บจะมี 4 หน้า แยกองค์ประกอบเป็น <br />
+connection.php <br />
+navbar.php <br />
+footer.php <br />
 *-------------* 
-โดยทุกหน้าจะเรียกเหมือนกันคือ include(navbar.php) , include(footer.php); ที่แตกต่างกันจะเป็นส่วน contence ใน page
-index.php หน้านี้จะใช้ method get ดึงข้อมูลจาก sql มาแสดงเป็น card โดยใช้ boostrap
-hobbies.php หน้านี้จะใช้ method get ดึงข้อมูลจาก sql มาแสดงเป็น table โดยใช้ boostrap และมีปุ่ม add_hobbies เพื่อไปหน้า add_hobbies.php
-|- table จะมี column action มีสองปุ่มคือ edit,del
-|--edit หน้านี้จะใช้ method get ดึงข้อมูลจาก sql มาแสดง form เพื่อรับข้อมูลจาก form พอกด submit จะแก้ update table list
-|--delete หน้านี้จะใช้ method get ดึงข้อมูลจาก sql มาลบพอลบเสร็จจะกลับไปหน้าเดิม
-about.php หน้านี้จะเป็น html css bootstrap เพียวๆ
-research.php หน้านี้จะเป็น html css bootstrap เพียวๆ
+โดยทุกหน้าจะเรียกเหมือนกันคือ include(navbar.php) , include(footer.php); ที่แตกต่างกันจะเป็นส่วน contence ใน page <br />
+index.php หน้านี้จะใช้ method get ดึงข้อมูลจาก sql มาแสดงเป็น card โดยใช้ boostrap <br />
+hobbies.php หน้านี้จะใช้ method get ดึงข้อมูลจาก sql มาแสดงเป็น table โดยใช้ boostrap และมีปุ่ม add_hobbies เพื่อไปหน้า add_hobbies.php <br />
+|- table จะมี column action มีสองปุ่มคือ edit,del <br />
+|--edit หน้านี้จะใช้ method get ดึงข้อมูลจาก sql มาแสดง form เพื่อรับข้อมูลจาก form พอกด submit จะแก้ update table list <br />
+|--delete หน้านี้จะใช้ method get ดึงข้อมูลจาก sql มาลบพอลบเสร็จจะกลับไปหน้าเดิม <br />
+about.php หน้านี้จะเป็น html css bootstrap เพียวๆ<br />
+research.php หน้านี้จะเป็น html css bootstrap เพียวๆ<br />
 
 ### การเตรียมการระบบ Cloud 
 เป็นการใช้ ec2 โดยใช้ aws linux ในการทำ และ install docker environment รวมถึง git เพืื่อ clone data มาเพื่อ deploy 
@@ -66,19 +66,19 @@ services: # เป็นการระบุ container ที่จะต้อ
 volumes:
   db_data: 
 
-การ deploy ตัว code มาทำงาน
-1.สร้างเว็บและ sql ให้เรียบร้อย พร้อมทั้ง dockerfile และ docker-compose.yaml
-2.เตรียม git ให้พร้อม
-3.สร้าง repositories ct519-Myhobbies
-4.อัพโหลด 1 ขึ้น repositories ct519-Myhobbies
-5.ใน Aws install docker engine ให้เรียบร้อย
-6.ใน Aws install docker compose ให้เรียบร้อย
-7.ใน command line git clone https://github.com/Kittinun-Roonsungneon/ct519-Myhobbies
-8.cd ct519-Myhobbies
-9.chmod -R 777 all file and folder
-10.docker-compose up --build
+การ deploy ตัว code มาทำงาน<br />
+1.สร้างเว็บและ sql ให้เรียบร้อย พร้อมทั้ง dockerfile และ docker-compose.yaml<br />
+2.เตรียม git ให้พร้อม<br />
+3.สร้าง repositories ct519-Myhobbies<br />
+4.อัพโหลด 1 ขึ้น repositories ct519-Myhobbies<br />
+5.ใน Aws install docker engine ให้เรียบร้อย<br />
+6.ใน Aws install docker compose ให้เรียบร้อย<br />
+7.ใน command line git clone https://github.com/Kittinun-Roonsungneon/ct519-Myhobbies<br />
+8.cd ct519-Myhobbies<br />
+9.chmod -R 777 all file and folder<br />
+10.docker-compose up --build <br />
 *--------------------*
-กรณีทำผิดพลาดให้กลับไปแก้
-1.sudo docker stop $(sudo docker ps -aq)
-2.sudo docker rm $(sudo docker ps -aq) 
-3.ไปขั้นตอนที่ 7-11 ใหม่
+กรณีทำผิดพลาดให้กลับไปแก้ <br />
+1.sudo docker stop $(sudo docker ps -aq) <br />
+2.sudo docker rm $(sudo docker ps -aq)  <br />
+3.ไปขั้นตอนที่ 7-11 ใหม่<br />
