@@ -14,35 +14,23 @@ services:
     networks:
       - internal
   db:
-    image: mariadb
-    container_name: my_mariadb
-    # command: --default-authentication-plugin=mysql_native_password
+    image: mysql:5.7
+    container_name: mysql
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: myhobbies
       MYSQL_USER: kittinun
       MYSQL_PASSWORD: 65130695
-    ports:
-      - 3306:3306
+      MYSQL_DATABASE: myhobbies
     volumes:
-      - mariadb_data:/var/lib/mysql
-      - ./mysql:/docker-entrypoint-initdb.d
+      - db_data:/var/lib/mysql
+      - ./sql/init.sql:/docker-entrypoint-initdb.d/init.sql  # Mount the init.sql script
     networks:
       - internal
-  phpmyadmin:
-    image: phpmyadmin/phpmyadmin
-    ports:
-      - "8000:81"
-    restart: always
-    environment:
-      PMA_HOST: db
-    depends_on:
-      - db
+  
 networks:
     internal:
-      driver: bridge 
 
 volumes:
-  mariadb_data:
+  db_data:
         
