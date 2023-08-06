@@ -14,8 +14,8 @@ services:
     networks:
       - internal
   db:
-    image: mysql:5.7
-    container_name: mysql
+    image: mariadb
+    container_name: mariadb
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: root
@@ -24,13 +24,31 @@ services:
       MYSQL_DATABASE: myhobbies
     volumes:
       - db_data:/var/lib/mysql
-      - ./sql/init.sql:/docker-entrypoint-initdb.d/init.sql  # Mount the init.sql script
+      - ./sql/init.sql:/docker-entrypoint-initdb.d/init.sql
     networks:
       - internal
-  
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: phpmyadmin
+    environment:
+      PMA_HOST: db
+      PMA_PORT: 3306
+      MYSQL_ROOT_PASSWORD: root
+    ports:
+      - 8080:80
+    networks:
+      - internal
+
 networks:
-    internal:
+  internal:
 
 volumes:
   db_data:
+
+
+
+
+
+
+
         
