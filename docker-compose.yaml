@@ -1,36 +1,24 @@
-version: "3.3"
+version: '3'
 services:
   web:
     build:
-      context: ./myweb
+      context: ./web
       dockerfile: Dockerfile
-    container_name: php
-    restart: always
-    volumes:
-      - ./myweb:/var/www/html/
     ports:
-      - 80:80
+      - "80:80"
+    volumes:
+      - ./web:/var/www/html
 
   db:
-    image: mysql:5.7
-    container_name: mysql
-    restart: always
+    image: mysql:8.0
     environment:
       MYSQL_ROOT_PASSWORD: root
-      MYSQL_USER: kittinun
-      MYSQL_ALLOW_EMPTY_PASSWORD: yes
       MYSQL_DATABASE: myhobbies
+      MYSQL_USER: kittinun
+      MYSQL_PASSWORD: 65130695
     volumes:
-      - db_data:/var/lib/mysql
+      - ./sql/myhobbies.sql:/docker-entrypoint-initdb.d
+
 volumes:
   db_data:
 
-
-
-
-
-
-
-
-
-        
