@@ -1,8 +1,20 @@
-version: '3.9'
+version: "3.3"
 services:
+  web:
+    build:
+      context: ./myweb
+      dockerfile: Dockerfile
+    container_name: php
+    depends_on:
+      - db
+    volumes:
+      - ./myweb:/var/www/html/
+    ports:
+      - 80:80
+
   db:
     image: mysql:5.7
-    container_name: myhobbies
+    container_name: mysql
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: root
@@ -11,16 +23,16 @@ services:
       MYSQL_DATABASE: myhobbies
     volumes:
       - db_data:/var/lib/mysql
-      - ./mysql/myhobbies.sql:/docker-entrypoint-initdb.d/init.sql  # Mount the init.sql script
-
-  web:
-    build: .
-    container_name: myhobbies-web
-    restart: always
-    depends_on:
-      - db
-    ports:
-      - "8000:80"
-    
+      - ./mysql/myhobbies.sql:/docker-entrypoint-initdb.d/init.sql
 volumes:
   db_data:
+
+
+
+
+
+
+
+
+
+        
