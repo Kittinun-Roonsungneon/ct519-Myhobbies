@@ -5,8 +5,7 @@ services:
       context: ./myweb
       dockerfile: Dockerfile
     container_name: php
-    depends_on:
-      - db
+    restart: always
     volumes:
       - ./myweb:/var/www/html/
     ports:
