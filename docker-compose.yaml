@@ -11,8 +11,8 @@ services:
       - ./myweb:/var/www/html
 
   db:
-    image: mysql:8.0
-    container_name: mysql
+    image: mariadb:10.4
+    container_name: mariadb
     environment:
       MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: myhobbies
